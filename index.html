@@ -41,9 +41,18 @@
   <body>
     <header class="header" id="header">
       <nav class="nav" id="nav">
-        <a href="./index.html"><img src="./images/logo.png" /></a>
+        <!-- Menu Button: -->
+        <div class="menu-btn">
+          <div class="hamburger"></div>
+        </div>
 
-        <ul>
+        <!-- Logo: -->
+        <a href="./index.html"
+          ><img class="menu-logo" src="./images/logo.png"
+        /></a>
+
+        <!-- Navigation Menu: -->
+        <ul class="menu" id="menu">
           <li>
             <a href="./index.html"><i class="fa-solid fa-house"></i>HOME</a>
           </li>
@@ -61,13 +70,6 @@
             >
           </li>
         </ul>
-
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </nav>
     </header>
     <main class="main" id="main">
@@ -85,7 +87,7 @@
           </p>
           <button class="cta-button">VIEW MY PORTFOLIO</button>
         </div>
-        <img src="./images/img-portfolio-square.jpg" />
+        <img class="img-portfolio" src="./images/img-portfolio-square.jpg" />
       </div>
     </main>
     <footer class="footer" id="footer">
@@ -112,5 +114,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/header.js"></script>
   </body>
 </html>

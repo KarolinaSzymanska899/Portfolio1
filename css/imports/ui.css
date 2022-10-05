@@ -49,6 +49,6 @@ a {
 
   .cta-button:hover {
     background: #f5e109;
-    transform: translate3d(0px, -10px, 0px);
+    transform: translate3d(0px, -5px, 0px);
   }
 }

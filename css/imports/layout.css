@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--white);
+}
+
+main {
+  background-color: var(--black);
+}
+
+/* ------------- remove this ----------------- */
+img {
+  width: 100px;
+}
