@@ -1,0 +1,20 @@
+@import url("https://use.typekit.net/xle7kur.css");
+
+/*
+CSS rules to specify families:
+
+font-family: montserrat, sans-serif;
+font-weight: 100-900;
+font-style: normal/italic
+
+font-family: sofachrome, sans-serif;
+font-weight: 200-500;
+font-style: normal/italic;
+*/
+
+:root {
+  --primary: #393c45;
+  --secondary: #f2b705;
+  --white: #ffffff;
+  --black: #000000;
+}

@@ -1,0 +1,54 @@
+h1 {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.message {
+  border: 1px solid grey;
+  color: grey;
+  margin-top: 1rem;
+  padding: 3rem;
+}
+
+.message.error {
+  border-color: red;
+  color: red;
+}
+
+.message.success {
+  border-color: green;
+  color: green;
+  background: var(--beige);
+}
+
+a {
+  text-decoration: none;
+}
+
+.cta-button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 3rem;
+  background: var(--secondary);
+  color: var(--primary);
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .cta-button {
+    position: relative;
+    transition: transform background-color 1s ease-in-out;
+  }
+
+  .cta-button:hover {
+    background: #f5e109;
+    transform: translate3d(0px, -10px, 0px);
+  }
+}
