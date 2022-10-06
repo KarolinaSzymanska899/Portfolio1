@@ -1,4 +1,4 @@
-// MOBILE NAVIGATION
+// Navigation Menu
 
 let isMenuOpen = false;
 
@@ -16,3 +16,12 @@ menuButton.addEventListener("click", () => {
     menu.classList.remove("menu-open");
   }
 });
+
+// shows the answers in Section About:
+
+const arrowsDown = document.querySelectorAll("#arrow-down");
+const extraSentences = document.querySelectorAll("#extra-sentence");
+
+arrowsDown.onclick = function () {
+  extraSentences[i].style.display = "block";
+};
