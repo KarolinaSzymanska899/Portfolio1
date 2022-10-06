@@ -157,10 +157,10 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "header main main main"
-      "header main main main"
-      "header main main main"
-      "header footer footer footer";
+      "header main main main main"
+      "header main main main main"
+      "header main main main main"
+      "header footer footer footer footer";
   }
 
   /* Hero Section */
