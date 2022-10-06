@@ -8,20 +8,184 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.body {
   display: flex;
   flex-direction: column;
   font-family: montserrat, sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 16px;
   color: var(--white);
 }
 
-main {
+.main {
+  /*overflow: scroll;*/
   background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: none;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+/* Portfolio Section */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-cta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-technologies {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* About Section */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions-answers {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Contact Section */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-detail {
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* ------------- remove this ----------------- */
 img {
-  width: 100px;
+  width: 250px;
+}
+
+/* --------------------------- media query tablet --------------------------- */
+@media only screen and (min-width: 768px) {
+}
+
+/* --------------------------- media query large --------------------------- */
+@media only screen and (min-width: 1024px) {
+  .header {
+    grid-area: header;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header main main main"
+      "header main main main"
+      "header main main main"
+      "header footer footer footer";
+  }
+
+  /* Hero Section */
+
+  .logo {
+    display: block;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-portfolio {
+    order: 2;
+  }
+
+  .hero-text {
+    order: 1;
+  }
+
+  /* Portfolio Section */
+
+  .portfolio-cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
