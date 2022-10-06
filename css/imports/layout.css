@@ -57,10 +57,13 @@ html {
   align-items: center;
 }
 
-.section-heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+span {
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  flex: 1 1;
+  background-color: var(--white);
+  margin-left: 4rem;
 }
 
 .portfolio-cards {
