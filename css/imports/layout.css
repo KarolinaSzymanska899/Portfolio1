@@ -57,6 +57,12 @@ html {
   align-items: center;
 }
 
+.heading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 h2 span {
   display: inline-block;
   height: 2px;
