@@ -57,13 +57,14 @@
             <a href="./index.html"><i class="fa-solid fa-house"></i>HOME</a>
           </li>
           <li>
-            <a href="./about.html"><i class="fa-solid fa-user"></i>ABOUT ME</a>
-          </li>
-          <li>
             <a href="./portfolio.html"
               ><i class="fa-solid fa-palette"></i>PORTFOLIO</a
             >
           </li>
+          <li>
+            <a href="./about.html"><i class="fa-solid fa-user"></i>ABOUT ME</a>
+          </li>
+
           <li>
             <a href="./contact.html"
               ><i class="fa-solid fa-envelope"></i>CONTACT ME</a
@@ -73,47 +74,246 @@
       </nav>
     </header>
     <main class="main" id="main">
-      <h1 hidden>INDEX PAGE</h1>
+      <!-- Section Hero: -->
+      <section class="hero" id="hero">
+        <a href="./index.html"><img class="logo" src="./images/logo.png" /></a>
 
-      <a href="./index.html"><img src="./images/logo.png" /></a>
-
-      <div class="index-container">
-        <div class="index-text">
-          <h2>KAROLINA SZYMAŃSKA</h2>
-          <h3>JUNIOR FRONTEND DEVELOPER</h3>
-          <p>
-            I turn visual and interactive design into functional and responsive
-            websites and applications.
-          </p>
-          <button class="cta-button">VIEW MY PORTFOLIO</button>
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>KAROLINA SZYMAŃSKA</h1>
+            <h2>JUNIOR FRONTEND DEVELOPER</h2>
+            <p>
+              I turn visual and interactive design into functional and
+              responsive websites and applications.
+            </p>
+            <button class="cta-button">VIEW MY PORTFOLIO</button>
+          </div>
+          <img class="img-portfolio" src="./images/img-portfolio-square.jpg" />
         </div>
-        <img class="img-portfolio" src="./images/img-portfolio-square.jpg" />
-      </div>
+      </section>
+
+      <!-- Section Portfolio: -->
+      <section class="portfolio" id="portfolio">
+        <div class="section-heading">
+          <h2>PORTFOLIO</h2>
+          <hr />
+        </div>
+
+        <div class="portfolio-cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <img src="./images/sciencemuseum.jpg" />
+
+            <div class="card-cta">
+              <a
+                href="https://science-museum-karolina-szymanska.netlify.app/"
+                target="_blank"
+                ><i class="fa-light fa-arrow-up-right-from-square"></i>LIVE
+                DEMO</a
+              >
+              <a
+                href="https://github.com/KarolinaSzymanska899/ScienceMuseum"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i>GITHUB</a
+              >
+            </div>
+
+            <div class="card-text">
+              <h3>Science Museum</h3>
+              <h3>Semester Project 1</h3>
+              <div class="card-technologies">
+                <span class="category">HTML</span>
+                <span class="category">CSS</span>
+              </div>
+              <p>
+                "Community Science Museum wants a website that is informative
+                and appealing, that will attract both middle school pupils and
+                their parents. The website should be informative and engaging,
+                but should encourage viewers to visit the museum itself. The
+                website should be responsive and be easy to use on a variety of
+                devices."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <img src="./images/dope.jpg" />
+
+            <div class="card-cta">
+              <a
+                href="https://dope-karolina-szymanska.netlify.app/"
+                target="_blank"
+                ><i class="fa-light fa-arrow-up-right-from-square"></i>LIVE
+                DEMO</a
+              >
+              <a
+                href="https://github.com/KarolinaSzymanska899/Dope"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i>GITHUB</a
+              >
+            </div>
+
+            <div class="card-text">
+              <h3>Dope</h3>
+              <h3>Cross-Course Project</h3>
+              <div class="card-technologies">
+                <span class="category">HTML</span>
+                <span class="category">CSS</span>
+                <span class="category">JavaScript</span>
+                <span class="category">Hotjar</span>
+              </div>
+              <p>
+                "An online shop selling men's and women's rain jackets. They are
+                designed for a range of different outdoor activities that
+                enriches people's lives. Their slogan is: Pushing the Comfort
+                Zone. The target audience is men and women aged 20 to 30 who
+                spend their time actively."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <img src="./images/heidicooks.jpg" />
+
+            <div class="card-cta">
+              <a
+                href="https://heidi-cooks-karolina-szymanska.netlify.app/"
+                target="_blank"
+                ><i class="fa-light fa-arrow-up-right-from-square"></i>LIVE
+                DEMO</a
+              >
+              <a
+                href="https://github.com/KarolinaSzymanska899/HeidiCooks"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i>GITHUB</a
+              >
+            </div>
+
+            <div class="card-text">
+              <h3>Heidi Cooks</h3>
+              <h3>Project Exam 1</h3>
+              <div class="card-technologies">
+                <span class="category">HTML</span>
+                <span class="category">CSS</span>
+                <span class="category">JavaScript</span>
+                <span class="category">WordPress</span>
+                <span class="category">Hotjar</span>
+              </div>
+              <p>
+                "Create a blog site. The content for your website will be stored
+                on a WordPress installation used as a Headless CMS. Build your
+                website using HTML, CSS and JavaScript and making a call to the
+                WordPress REST API to fetch the data."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section About: -->
+      <section class="about" id="about">
+        <div class="section-heading">
+          <h2>ABOUT ME</h2>
+          <hr />
+        </div>
+
+        <div class="questions-answers">
+          <!-- Question 1 -->
+          <div class="question-container question1">
+            <h3>Why am I passionate about Frontend Development?</h3>
+            <p>
+              The main reason is that front-end development satisfies my need
+              for creativity. It enables me to easily put my ideas into digital
+              form and get results back really quick. I still remember the first
+              time I created an HTML page and opened it in the browser. A whole
+              new world of possibilities appeared before my eyes.
+            </p>
+            <i class="fa-solid fa-square-caret-down" id="arrow-down"></i>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="question-container question2">
+            <h3>Which attributes do help me in Frontend Development?</h3>
+            <p>
+              I am involved in Web Development, independent, like challenges
+              both in projects and private life. These make me take a step
+              further. In addition to this, I like people, troubleshooting and
+              riddles.
+            </p>
+            <i class="fa-solid fa-square-caret-down" id="arrow-down"></i>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="question-container question3">
+            <h3>Why do I find User Centered Design important?</h3>
+            <p>
+              When I design a new product, it's always essential to me to
+              understand who and how people will use it. Satisfying user's needs
+              and wants becomes a priority, and every design decision is
+              evaluated in the context of whether it delivers value to the
+              users.
+            </p>
+
+            <i class="fa-solid fa-square-caret-down" id="arrow-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Contact: -->
+      <section class="contact" id="contact">
+        <div class="section-heading">
+          <h2>CONTACT ME</h2>
+          <hr />
+        </div>
+
+        <div class="contact-details">
+          <!-- Email -->
+          <a href="mailto:karolinaszymanska899@gmail.com" target="_blank">
+            <div class="contact-detail">
+              <i class="fa-solid fa-envelope"></i>
+              <p>karolinaszymanska899@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- Linkedin -->
+          <a
+            href="https://www.linkedin.com/in/karolina-szyma%C5%84ska-64b36089/"
+            target="_blank"
+          >
+            <div class="contact-detail">
+              <i class="fa-brands fa-linkedin"></i>
+              <p>Linkedin Profile</p>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/KarolinaSzymanska899" target="_blank">
+            <div class="contact-detail">
+              <i class="fa-brands fa-square-github"></i>
+              <p>GitHub Profile</p>
+            </div>
+          </a>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252526.55384943768!2d5.148997053872707!3d60.364891083866176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46390d4966767d77%3A0x9e42a03eb4de0a08!2sBergen!5e0!3m2!1spl!2sno!4v1664910577740!5m2!1spl!2sno"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
     <footer class="footer" id="footer">
       <div class="footer-text">
         <p>© 2022 Karolina Szymańska</p>
         <p>All rights reserved</p>
-        <p>karolinaszymanska899@gmail.com</p>
-      </div>
-      <div class="footer-social">
-        <a href="https://github.com/KarolinaSzymanska899" target="_blank"
-          ><i class="fa-brands fa-square-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/karolina-szyma%C5%84ska-64b36089/"
-          target="_blank"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100082023381932"
-          target="_blank"
-        >
-          <i class="fa-brands fa-square-facebook"></i>
-        </a>
       </div>
     </footer>
-    <script src="./js/header.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
