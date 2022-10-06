@@ -42,12 +42,39 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .cta-button {
-    position: relative;
-    transition: transform background-color 1s ease-in-out;
+    /* 1. styling for color change: */
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    /* 2. styling for position change: */
+    animation-duration: 0.2s;
+    transform-origin: bottom;
   }
 
   .cta-button:hover {
-    background: #f5e109;
-    transform: translate3d(0px, -5px, 0px);
+    /* 1. the new color for color change */
+    background-color: #fae3ae;
+    /* 2. styling for position change: */
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
   }
 }

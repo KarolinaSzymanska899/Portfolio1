@@ -1,14 +1,10 @@
 .header {
-  background-color: var(--secondary);
+  background-color: var(--black);
 }
 
 .nav {
   display: flex;
   flex-direction: column;
-}
-
-.menu-logo {
-  display: none;
 }
 
 .menu-btn {
@@ -96,10 +92,6 @@ li::marker {
 
 /* --------------------------- media query large --------------------------- */
 @media only screen and (min-width: 1024px) {
-  .header {
-    background-color: var(--primary);
-  }
-
   .menu {
     opacity: 1;
     transform: translateX(100px);
