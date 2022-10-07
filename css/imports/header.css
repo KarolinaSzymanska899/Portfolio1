@@ -108,6 +108,9 @@ li::marker {
     opacity: 1;
     transform: translateX(0px);
     /*new styles:*/
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
