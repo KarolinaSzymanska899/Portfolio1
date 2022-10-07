@@ -105,6 +105,12 @@ li::marker {
   }
 
   .nav {
+    height: 100%;
+    grid-area: nav;
+    position: static;
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
     background-color: var(--primary);
   }
 
