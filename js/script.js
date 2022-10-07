@@ -3,7 +3,7 @@
 let isMenuOpen = false;
 
 const menuButton = document.querySelector(".menu-btn");
-const menu = document.querySelector(".menu");
+const menu = document.querySelector(".nav");
 
 menuButton.addEventListener("click", () => {
   isMenuOpen = !isMenuOpen;
