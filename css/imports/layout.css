@@ -19,7 +19,8 @@ html {
 }
 
 .main {
-  /*overflow: scroll;*/
+  /*OVERFLOW SCEROLL HERE
+  overflow: scroll;*/
   background-color: var(--black);
   display: flex;
   flex-direction: column;
@@ -143,6 +144,10 @@ img {
   width: 250px;
 }
 
+iframe {
+  width: 300px;
+}
+
 /* --------------------------- media query tablet --------------------------- */
 @media only screen and (min-width: 768px) {
 }
@@ -171,8 +176,6 @@ img {
     grid-template-rows: auto;
     grid-template-areas:
       "nav header header header header"
-      "nav main main main main"
-      "nav main main main main"
       "nav main main main main"
       "nav footer footer footer footer";
   }

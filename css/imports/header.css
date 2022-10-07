@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--black);
+  display: none;
 }
 
 .nav {
@@ -92,6 +92,13 @@ li::marker {
 
 /* --------------------------- media query large --------------------------- */
 @media only screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+  }
+
   .menu {
     opacity: 1;
     transform: translateX(100px);
@@ -102,6 +109,6 @@ li::marker {
   }
 
   .menu a {
-    color: var(--white);
+    color: var(--primary);
   }
 }
