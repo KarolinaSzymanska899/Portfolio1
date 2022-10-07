@@ -3,9 +3,14 @@
 }
 
 .nav {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--secondary);
   opacity: 0;
   transition: 0.3s;
@@ -30,7 +35,7 @@
   border: 1px solid white;
 }
 
-.menu > ul > li > a {
+.nav > ul > li > a {
   color: var(--primary);
 }
 
@@ -63,10 +68,6 @@
 
 li::marker {
   content: "";
-}
-
-.menu > ul > li {
-  text-align: center;
 }
 
 /* Button Animation */
@@ -124,7 +125,7 @@ li::marker {
     display: none;
   }
 
-  .menu a {
+  .nav a {
     color: var(--white);
   }
 }
