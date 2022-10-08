@@ -106,10 +106,19 @@ li::marker {
 
 /* --------------------------- media query large --------------------------- */
 @media only screen and (min-width: 1024px) {
+  .menu-logo {
+    color: var(--secondary);
+    font-size: 4rem;
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+  }
+
   .menu-btn {
     display: none;
   }
   .header {
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,12 +127,17 @@ li::marker {
 
   .nav {
     height: 100%;
+    width: 100%;
     grid-area: nav;
     position: static;
-    width: 100%;
+
     opacity: 1;
     transform: translateX(0);
     background-color: var(--primary);
+  }
+
+  .nav a {
+    color: var(--white);
   }
 
   /* CZY .menu POTRZEBUJE?*/
@@ -137,9 +151,5 @@ li::marker {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .nav a {
-    color: var(--white);
   }
 }

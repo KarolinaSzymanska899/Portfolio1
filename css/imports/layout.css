@@ -139,6 +139,10 @@ h2 span {
   background-color: var(--secondary);
 }
 
+.fa-arrow-up-right-from-square {
+  font-size: 3rem;
+}
+
 .card-text {
   display: flex;
   flex-direction: column;
@@ -212,7 +216,7 @@ span.category {
   justify-content: flex-start;
   align-items: center;
   padding: 1rem 0;
-  border-top: 1px solid var(--primary);
+  border-top: 2px solid var(--primary);
 }
 
 a .contact-detail i {
@@ -247,6 +251,11 @@ iframe {
 @media only screen and (min-width: 500px) {
   .img-portfolio {
     width: 40%;
+  }
+
+  /* UWAGA TUTAJ: */
+  .hero {
+    margin-bottom: 8rem;
   }
 }
 
