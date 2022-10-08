@@ -6,3 +6,11 @@ footer,
   align-items: center;
   padding: 1.7rem 0;
 }
+
+.footer-text > p {
+  font-weight: 500;
+}
+
+.footer-text p:first-of-type {
+  margin-bottom: 0.7rem;
+}

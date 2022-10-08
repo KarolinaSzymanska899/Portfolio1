@@ -1,8 +1,9 @@
-// Navigation Menu
+// Navigation Menu:
 
 const menuButton = document.querySelector(".menu-btn");
 const menu = document.querySelector(".nav");
 const menuItems = document.querySelectorAll(".nav > ul > li > a");
+const questionContainers = document.querySelectorAll(".question-container");
 
 menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("open");
@@ -18,11 +19,11 @@ menuItems.forEach((e) => {
 
 // shows the answers in Section About:
 
-/*
-const arrowsDown = document.querySelectorAll("#arrow-down");
-const extraSentences = document.querySelectorAll("#extra-sentence");
+questionContainers.forEach((container) => {
+  const arrow = container.querySelector("i");
+  const paragraph = container.querySelector("p");
 
-arrowsDown.onclick = function () {
-  extraSentences[i].style.display = "block";
-};
-*/
+  arrow.addEventListener("click", () => {
+    paragraph.classList.toggle("hidden");
+  });
+});

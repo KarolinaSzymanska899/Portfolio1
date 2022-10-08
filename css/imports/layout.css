@@ -29,8 +29,6 @@ h2.heading {
 }
 
 .main {
-  /*OVERFLOW SCEROLL HERE
-  overflow: scroll;*/
   padding: 5rem 2rem 0 2rem;
   background-color: var(--black);
   display: flex;
@@ -182,6 +180,7 @@ span.category {
 .questions-answers {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .question-container {
@@ -194,6 +193,10 @@ span.category {
 .question-container h3,
 .question-container p {
   margin-bottom: 0.5rem;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Contact Section */
@@ -332,7 +335,7 @@ iframe {
 
   .portfolio-cards {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
@@ -342,5 +345,21 @@ iframe {
 
   .card-cta a {
     font-size: 0.7rem;
+  }
+
+  /* About Section */
+
+  .about {
+    margin-bottom: 25rem;
+  }
+
+  .hidden {
+    max-width: 60%;
+  }
+
+  /* Contact Section */
+
+  a .contact-detail p {
+    font-size: 1rem;
   }
 }
