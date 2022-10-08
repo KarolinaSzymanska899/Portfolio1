@@ -287,6 +287,8 @@ iframe {
 
   .main {
     grid-area: main;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .footer {
@@ -305,8 +307,8 @@ iframe {
 
   /* Hero Section */
 
-  .logo {
-    display: block;
+  .hero {
+    margin-bottom: 15rem;
   }
 
   .hero-container {
@@ -322,10 +324,23 @@ iframe {
     order: 1;
   }
 
+  .hero-text p {
+    max-width: 80%;
+  }
+
   /* Portfolio Section */
 
   .portfolio-cards {
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .card {
+    max-width: 30%;
+  }
+
+  .card-cta a {
+    font-size: 0.7rem;
   }
 }
