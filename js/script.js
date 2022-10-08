@@ -1,20 +1,19 @@
 // Navigation Menu
 
-let isMenuOpen = false;
-
 const menuButton = document.querySelector(".menu-btn");
 const menu = document.querySelector(".nav");
+const menuItems = document.querySelectorAll(".nav > ul > li > a");
 
 menuButton.addEventListener("click", () => {
-  isMenuOpen = !isMenuOpen;
+  menuButton.classList.toggle("open");
+  menu.classList.toggle("menu-open");
+});
 
-  if (isMenuOpen) {
-    menuButton.classList.add("open");
-    menu.classList.add("menu-open");
-  } else {
+menuItems.forEach((e) => {
+  e.addEventListener("click", () => {
     menuButton.classList.remove("open");
     menu.classList.remove("menu-open");
-  }
+  });
 });
 
 // shows the answers in Section About:

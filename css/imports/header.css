@@ -15,7 +15,6 @@
   opacity: 0;
   transition: 0.3s;
   transform: translateX(-100%);
-  pointer-events: none;
 }
 
 ul li {
@@ -97,7 +96,6 @@ li::marker {
   opacity: 1;
   transition: 0.3s;
   transform: translateX(0);
-  pointer-events: all;
 }
 
 /* --------------------------- media query tablet --------------------------- */
@@ -117,6 +115,7 @@ li::marker {
   .menu-btn {
     display: none;
   }
+
   .header {
     padding-top: 2rem;
     display: flex;
